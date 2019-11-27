@@ -1,0 +1,110 @@
+﻿@page
+@model tbkkData.Pages.Employees.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+
+<!--////////////////////////////////////__Manage_Table//////////////////////////////////////////////-->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #myInput {
+            background-image: url('/css/searchicon.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            width: 100%;
+            font-size: 16px;
+            padding: 12px 20px 12px 40px;
+            border: 1px solid #ddd;
+            margin-bottom: 12px;
+        }
+
+        #myTable {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #ddd;
+            font-size: 18px;
+        }
+
+            #myTable th, #myTable td {
+                text-align: left;
+                padding: 12px;
+            }
+
+            #myTable tr {
+                border-bottom: 1px solid #ddd;
+            }
+
+                #myTable tr.header, #myTable tr:hover {
+                    background-color: #f1f1f1;
+                }
+    </style>
+</head>
+
+<br />
+<ol class="alert-warning   ">
+
+    <h2 align="center">Employees list</h2>
+</ol>
+
+<h3>Search</h3>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name" />
+
+<table id="myTable">
+    <tr class="header">
+        <th style="width:25%;"> @Html.DisplayNameFor(model => model.Employee[0].FirstName)</th>
+        <th style="width:25%;"> @Html.DisplayNameFor(model => model.Employee[0].LastName)</th>
+       
+        <th style="width:10%;"> @Html.DisplayNameFor(model => model.Employee[0].Status)</th>
+    </tr>
+    @foreach (var item in Model.Employee)
+    {
+        int i = 0;
+        <tr>
+            <td> @Html.DisplayFor(modelItem => item.FirstName)</td>
+            <td> @Html.DisplayFor(modelItem => item.LastName)</td>
+           
+            <td> <button onClick = "window.location ='/GradeHistorys/Index'" style = "background-color:Red"> แบบฟอร์ม </button>  </td>
+        </tr>
+        
+    }
+
+</table>
+
+<script>
+    function myFunction() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>
+
+<a asp-page="Create">Create New</a>
+
+
+
+
+<!--////////////////////////////////////__Manage_Table//////////////////////////////////////////////-->

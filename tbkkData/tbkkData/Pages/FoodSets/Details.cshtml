@@ -1,0 +1,31 @@
+﻿@page
+@model tbkkData.Pages.FoodSets.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>FoodSet</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FoodSet.FoodSetcoManul)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FoodSet.FoodSetcoManul)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FoodSet.NameSet)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FoodSet.NameSet)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.FoodSet.FoodSetID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

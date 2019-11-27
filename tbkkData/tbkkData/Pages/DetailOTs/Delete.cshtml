@@ -1,0 +1,46 @@
+﻿@page
+@model tbkkData.Pages.DetailOTs.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>DetailOT</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DetailOT.Hour)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DetailOT.Hour)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DetailOT.Type)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DetailOT.Type)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DetailOT.CarNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DetailOT.CarNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DetailOT.Status)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DetailOT.Status)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="DetailOT.DetailOTID" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

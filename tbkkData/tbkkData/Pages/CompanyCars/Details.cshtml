@@ -1,0 +1,49 @@
+﻿@page
+@model tbkkData.Pages.CompanyCars.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CompanyCar</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyCar.NameCompanyCar)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CompanyCar.NameCompanyCar)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyCar.Seat)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CompanyCar.Seat)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyCar.Line)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CompanyCar.Line)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyCar.Call)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CompanyCar.Call)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyCar.Status)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CompanyCar.Status)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.CompanyCar.CompanyCarID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

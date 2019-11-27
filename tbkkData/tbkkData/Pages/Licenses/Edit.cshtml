@@ -1,0 +1,75 @@
+﻿@page
+@model tbkkData.Pages.Licenses.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>License</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="License.LicenseID" />
+            <div class="form-group">
+                <label asp-for="License.LicenseName" class="control-label"></label>
+                <input asp-for="License.LicenseName" class="form-control" />
+                <span asp-validation-for="License.LicenseName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="License.SoftewareName" class="control-label"></label>
+                <input asp-for="License.SoftewareName" class="form-control" />
+                <span asp-validation-for="License.SoftewareName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="License.PurchaseDate" class="control-label"></label>
+                <input asp-for="License.PurchaseDate" class="form-control" />
+                <span asp-validation-for="License.PurchaseDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="License.StartDate" class="control-label"></label>
+                <input asp-for="License.StartDate" class="form-control" />
+                <span asp-validation-for="License.StartDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="License.ExpireDate" class="control-label"></label>
+                <input asp-for="License.ExpireDate" class="form-control" />
+                <span asp-validation-for="License.ExpireDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="License.PONumber" class="control-label"></label>
+                <input asp-for="License.PONumber" class="form-control" />
+                <span asp-validation-for="License.PONumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="License.Attachfiles" class="control-label"></label>
+                <input asp-for="License.Attachfiles" class="form-control" />
+                <span asp-validation-for="License.Attachfiles" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="License.Note" class="control-label"></label>
+                <input asp-for="License.Note" class="form-control" />
+                <span asp-validation-for="License.Note" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="License.Status" class="control-label"></label>
+                <input asp-for="License.Status" class="form-control" />
+                <span asp-validation-for="License.Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

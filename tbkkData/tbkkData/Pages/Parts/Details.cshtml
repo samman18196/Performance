@@ -1,0 +1,31 @@
+﻿@page
+@model tbkkData.Pages.Parts.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Part</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Part.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Part.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Part.Price)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Part.Price)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Part.PartID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

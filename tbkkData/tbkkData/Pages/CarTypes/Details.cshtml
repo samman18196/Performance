@@ -1,0 +1,32 @@
+﻿@page
+@model tbkkData.Pages.CarTypes.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CarType</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.CarType.NameCar)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CarType.NameCar)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CarType.Seat)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CarType.Seat)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.CarType.CarTypeID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

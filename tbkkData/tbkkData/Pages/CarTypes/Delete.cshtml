@@ -1,0 +1,35 @@
+﻿@page
+@model tbkkData.Pages.CarTypes.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>CarType</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.CarType.NameCar)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CarType.NameCar)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CarType.Seat)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CarType.Seat)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="CarType.CarTypeID" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

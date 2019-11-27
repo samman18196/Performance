@@ -1,0 +1,84 @@
+﻿@page
+@model tbkkData.Pages.Licenses.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.License[0].LicenseName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.License[0].SoftewareName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.License[0].PurchaseDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.License[0].StartDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.License[0].ExpireDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.License[0].PONumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.License[0].Attachfiles)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.License[0].Note)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.License[0].Status)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.License) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.LicenseName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoftewareName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PurchaseDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExpireDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PONumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Attachfiles)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Note)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.LicenseID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.LicenseID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.LicenseID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
