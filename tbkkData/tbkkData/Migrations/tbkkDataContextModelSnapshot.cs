@@ -694,13 +694,21 @@ namespace tbkkData.Migrations
 
                     b.Property<int>("Employee_EmployeeTypeID");
 
+                    b.Property<int>("Employee_EvaluationID");
+
+                    b.Property<int>("Employee_GradeHistoryID");
+
                     b.Property<int>("Employee_LocationID");
 
                     b.Property<int>("Employee_PositionID");
 
+                    b.Property<int?>("EvaluationID1");
+
                     b.Property<string>("FirstName");
 
                     b.Property<string>("Gender");
+
+                    b.Property<int?>("GradeHistoryID1");
 
                     b.Property<string>("Image");
 
@@ -721,6 +729,10 @@ namespace tbkkData.Migrations
                     b.HasIndex("DepartmentID1");
 
                     b.HasIndex("EmployeeTypeID1");
+
+                    b.HasIndex("EvaluationID1");
+
+                    b.HasIndex("GradeHistoryID1");
 
                     b.HasIndex("LocationID1");
 
@@ -748,8 +760,6 @@ namespace tbkkData.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("EmployeeID1");
-
                     b.Property<DateTime>("EvaDate");
 
                     b.Property<string>("EvaDetail");
@@ -758,8 +768,6 @@ namespace tbkkData.Migrations
 
                     b.Property<int>("EvaSumPoint");
 
-                    b.Property<int>("Eva_EmployeeID");
-
                     b.Property<int>("Eva_GradeHistoryID");
 
                     b.Property<string>("Evatype");
@@ -767,8 +775,6 @@ namespace tbkkData.Migrations
                     b.Property<int?>("GradeHistoryID1");
 
                     b.HasKey("EvaluationID");
-
-                    b.HasIndex("EmployeeID1");
 
                     b.HasIndex("GradeHistoryID1");
 
@@ -804,10 +810,6 @@ namespace tbkkData.Migrations
 
                     b.Property<int>("Count");
 
-                    b.Property<int?>("EmployeeID1");
-
-                    b.Property<int>("GradeHistory_EmployeeID");
-
                     b.Property<int>("GrahAllPoint");
 
                     b.Property<int>("GrahBonusUp");
@@ -823,8 +825,6 @@ namespace tbkkData.Migrations
                     b.Property<string>("GrahYear");
 
                     b.HasKey("GradeHistoryID");
-
-                    b.HasIndex("EmployeeID1");
 
                     b.ToTable("GradeHistory");
                 });
@@ -1586,6 +1586,14 @@ namespace tbkkData.Migrations
                         .WithMany()
                         .HasForeignKey("EmployeeTypeID1");
 
+                    b.HasOne("tbkkData.Models.Evaluation", "EvaluationID")
+                        .WithMany()
+                        .HasForeignKey("EvaluationID1");
+
+                    b.HasOne("tbkkData.Models.GradeHistory", "GradeHistoryID")
+                        .WithMany()
+                        .HasForeignKey("GradeHistoryID1");
+
                     b.HasOne("tbkkData.Models.Location", "LocationID")
                         .WithMany()
                         .HasForeignKey("LocationID1");
@@ -1597,10 +1605,6 @@ namespace tbkkData.Migrations
 
             modelBuilder.Entity("tbkkData.Models.Evaluation", b =>
                 {
-                    b.HasOne("tbkkData.Models.Employee", "EmployeeID")
-                        .WithMany()
-                        .HasForeignKey("EmployeeID1");
-
                     b.HasOne("tbkkData.Models.GradeHistory", "GradeHistoryID")
                         .WithMany()
                         .HasForeignKey("GradeHistoryID1");
@@ -1611,13 +1615,6 @@ namespace tbkkData.Migrations
                     b.HasOne("tbkkData.Models.Canteen", "CanteenID")
                         .WithMany()
                         .HasForeignKey("CanteenID1");
-                });
-
-            modelBuilder.Entity("tbkkData.Models.GradeHistory", b =>
-                {
-                    b.HasOne("tbkkData.Models.Employee", "EmployeeID")
-                        .WithMany()
-                        .HasForeignKey("EmployeeID1");
                 });
 
             modelBuilder.Entity("tbkkData.Models.GradeHistory_Cock", b =>

@@ -53,7 +53,7 @@ using tbkkData;
             WriteLiteral("<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n");
             EndContext();
             BeginContext(37, 685, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ed19532f409d4d799a6b0f0e64f444a5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2928ca24b283409cbb6f9366527c7435", async() => {
                 BeginContext(43, 672, true);
                 WriteLiteral(@"
 
@@ -92,7 +92,7 @@ using tbkkData;
             WriteLiteral("\r\n\r\n");
             EndContext();
             BeginContext(726, 8515, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b5dc1115cc1c4aa0a1326c71abbc23d0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a6ecab0c21fc425789537a4a02bf06e8", async() => {
                 BeginContext(746, 358, true);
                 WriteLiteral(@"
 
@@ -108,7 +108,7 @@ using tbkkData;
         ");
                 EndContext();
                 BeginContext(1104, 165, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "118e0dba74a849cc9267de2b6689db44", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8135519a76f24d5f8fa31a8666d43b08", async() => {
                     BeginContext(1189, 73, true);
                     WriteLiteral("\r\n            <div class=\"input-group\">\r\n\r\n\r\n            </div>\r\n        ");
                     EndContext();

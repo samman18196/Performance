@@ -19,9 +19,7 @@ namespace tbkkData.Models
         public int EvaStatus { get; set; }
         public string Evatype { get; set; }
 
-        [ForeignKey("Employee")]
-        public int Eva_EmployeeID { get; set; }
-        public Employee EmployeeID { get; set; }
+       
 
         [ForeignKey("GradeHistory")]
         public int Eva_GradeHistoryID { get; set; }

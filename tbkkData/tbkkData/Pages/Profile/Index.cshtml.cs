@@ -24,5 +24,6 @@ namespace tbkkData.Pages.Profile
         {
             Employee = await _context.Employee.ToListAsync();
         }
+        public Department Department { get; set; }
     }
 }

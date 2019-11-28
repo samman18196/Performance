@@ -62,20 +62,21 @@
 
 <table id="myTable">
     <tr class="header">
+        <th style="width:25%;"> @Html.DisplayNameFor(model => model.Employee[0].DepartmentID.DepartmentName)</th>
         <th style="width:25%;"> @Html.DisplayNameFor(model => model.Employee[0].FirstName)</th>
         <th style="width:25%;"> @Html.DisplayNameFor(model => model.Employee[0].LastName)</th>
-       
         <th style="width:10%;"> @Html.DisplayNameFor(model => model.Employee[0].Status)</th>
     </tr>
     @foreach (var item in Model.Employee)
     {
         int i = 0;
-        <tr>
-            <td> @Html.DisplayFor(modelItem => item.FirstName)</td>
-            <td> @Html.DisplayFor(modelItem => item.LastName)</td>
-           
-            <td> <button onClick = "window.location ='/GradeHistorys/Index'" style = "background-color:Red"> แบบฟอร์ม </button>  </td>
-        </tr>
+<tr>
+    <td> @Html.DisplayFor(modelItem => item.DepartmentID.DepartmentName)</td>
+    <td> @Html.DisplayFor(modelItem => item.FirstName)</td>
+    <td> @Html.DisplayFor(modelItem => item.LastName)</td>
+  
+    <td> <button onClick="window.location ='/GradeHistorys/Index'" style="background-color:greenyellow"> แบบฟอร์ม </button>  </td>
+</tr>
         
     }
 

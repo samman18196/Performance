@@ -54,5 +54,13 @@ namespace tbkkData.Models
         [ForeignKey("Position")]
         public int Employee_PositionID { get; set; }
         public Position PositionID { get; set; }
+
+        [ForeignKey("Evaluation")]
+        public int Employee_EvaluationID{ get; set; }
+        public Evaluation EvaluationID { get; set; }
+
+        [ForeignKey("GradeHistory")]
+        public int Employee_GradeHistoryID { get; set; }
+        public GradeHistory GradeHistoryID { get; set; }
     }
 }

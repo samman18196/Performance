@@ -53,7 +53,7 @@ using tbkkData;
             WriteLiteral("<!DOCTYPE html>\r\n<h  tml lang=\"en\">\r\n\r\n");
             EndContext();
             BeginContext(39, 669, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eaece0a86fcd40b58f7bee0c0ecab4a6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "16065c5c0acb4224941dcb1c096edf5d", async() => {
                 BeginContext(45, 656, true);
                 WriteLiteral(@"
 
@@ -92,7 +92,7 @@ using tbkkData;
             WriteLiteral("\r\n\r\n");
             EndContext();
             BeginContext(712, 10627, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b9d3c85e1562417f9086ac5663c42b9e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ec49d534bb5c4cff83cc83047a07df02", async() => {
                 BeginContext(732, 358, true);
                 WriteLiteral(@"
 
@@ -108,7 +108,7 @@ using tbkkData;
         ");
                 EndContext();
                 BeginContext(1090, 165, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "718870d4b9854df0b406095010df8f75", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e95328989f2d44b7b554a7dd2fcdfbe0", async() => {
                     BeginContext(1175, 73, true);
                     WriteLiteral("\r\n            <div class=\"input-group\">\r\n\r\n\r\n            </div>\r\n        ");
                     EndContext();

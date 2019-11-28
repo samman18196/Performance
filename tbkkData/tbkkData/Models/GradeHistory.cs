@@ -22,8 +22,6 @@ namespace tbkkData.Models
      
         public int GrahSalaryUp { get; set; }
 
-        [ForeignKey("Employee")]
-        public int  GradeHistory_EmployeeID { get; set; }
-        public virtual Employee EmployeeID { get; set; }
+       
     }
 }

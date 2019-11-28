@@ -53,7 +53,7 @@ using tbkkData;
             WriteLiteral("<!DOCTYPE html\r\n          PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\r\n");
             EndContext();
             BeginContext(181, 665, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f02fa87812784f0aa73eff0d1b1aebc2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "40a4fb47337a481abd9c609c1dbbecdd", async() => {
                 BeginContext(187, 652, true);
                 WriteLiteral(@"
 
@@ -92,7 +92,7 @@ using tbkkData;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(848, 4634, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "34d4ec216b604de793e6e2464548f4d9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4fa81238464f4ec39721eab28db297d0", async() => {
                 BeginContext(868, 371, true);
                 WriteLiteral(@"
 
@@ -110,7 +110,7 @@ using tbkkData;
         ");
                 EndContext();
                 BeginContext(1239, 165, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b5c669293c5244918f6d2aab5f52ceb3", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cbc7467c447142b19f534ec1c4058839", async() => {
                     BeginContext(1324, 73, true);
                     WriteLiteral("\r\n            <div class=\"input-group\">\r\n\r\n\r\n            </div>\r\n        ");
                     EndContext();

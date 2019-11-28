@@ -759,8 +759,8 @@ C:\Users\USER\Desktop\Tbkkเติ้ก - Copy\tbkkData(Trapodation && Perform
 C:\Users\USER\Desktop\Tbkkเติ้ก - Copy\tbkkData(Trapodation && Performant)_26_11_62(18.00)\tbkkData(TS)_25_11_62\tbkkData\tbkkData\obj\Debug\netcoreapp2.1\tbkkData.dll
 C:\Users\USER\Desktop\Tbkkเติ้ก - Copy\tbkkData(Trapodation && Performant)_26_11_62(18.00)\tbkkData(TS)_25_11_62\tbkkData\tbkkData\obj\Debug\netcoreapp2.1\tbkkData.pdb
 C:\Users\USER\Desktop\Tbkkเติ้ก - Copy\tbkkData(Trapodation && Performant)_26_11_62(18.00)\tbkkData(TS)_25_11_62\tbkkData\tbkkData\obj\Debug\netcoreapp2.1\tbkkData.csproj.CopyComplete
-C:\Users\USER\Desktop\Tbkkเติ้ก - Copy\tbkkData(Trapodation && Performant)_26_11_62(18.00)\tbkkData(TS)_25_11_62\tbkkData\tbkkData\obj\Debug\netcoreapp2.1\Razor\Pages\GradeHistorys\.g.cshtml.cs
 C:\Users\USER\Desktop\Tbkkเติ้ก - Copy\tbkkData(Trapodation && Performant)_26_11_62(18.00)\tbkkData(TS)_25_11_62\tbkkData\tbkkData\obj\Debug\netcoreapp2.1\Razor\Pages\Html\pfm.g.cshtml.cs
 C:\Users\USER\Desktop\Tbkkเติ้ก - Copy\tbkkData(Trapodation && Performant)_26_11_62(18.00)\tbkkData(TS)_25_11_62\tbkkData\tbkkData\obj\Debug\netcoreapp2.1\Razor\Pages\Html\pfm2.g.cshtml.cs
 C:\Users\USER\Desktop\Tbkkเติ้ก - Copy\tbkkData(Trapodation && Performant)_26_11_62(18.00)\tbkkData(TS)_25_11_62\tbkkData\tbkkData\obj\Debug\netcoreapp2.1\Razor\Pages\Html\pfm_profile.g.cshtml.cs
 C:\Users\USER\Desktop\Tbkkเติ้ก - Copy\tbkkData(Trapodation && Performant)_26_11_62(18.00)\tbkkData(TS)_25_11_62\tbkkData\tbkkData\obj\Debug\netcoreapp2.1\Razor\Pages\Profile\Index.g.cshtml.cs
+C:\Users\USER\Desktop\Tbkkเติ้ก - Copy\tbkkData(Trapodation && Performant)_26_11_62(18.00)\tbkkData(TS)_25_11_62\tbkkData\tbkkData\obj\Debug\netcoreapp2.1\Razor\Pages\GradeHistorys\Index2.g.cshtml.cs

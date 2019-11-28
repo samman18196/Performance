@@ -1,0 +1,174 @@
+﻿@page
+@model tbkkData.Pages.GradeHistorys.Index2Model
+
+@{
+    ViewData["Title"] = "Index2";
+}
+
+<h2>Index2</h2>
+
+<h4>GradeHistory</h4>
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-7">
+
+            <h3 align="center">ฟอร์มแบบสอบถามด้านสมรรถนะ</h3>
+            <form id="formq" name="formq" method="post" action="q_db.php">
+                <table width="100%" border="1" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td width="100%" rowspan="2" align="center"><strong>รายการ</strong></td>
+                        <td colspan="5" align="center"><strong>ระดับความคิดเห็น</strong></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 20px" width="5%" align="center"><strong>5</strong></td>
+                        <td style="padding: 20px" width="5%" align="center"><strong>4</strong></td>
+                        <td style="padding: 20px" width="5%" align="center"><strong>3</strong></td>
+                        <td style="padding: 20px" width="5%" align="center"><strong>2</strong></td>
+                        <td style="padding: 20px" width="5%" align="center"><strong>1</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td height="30">
+                            &nbsp;
+                            1.Employee Satisfaction (ความพึงพอใจของพนักงาน)
+                        </td>
+                        <td height="30" align="center">
+                            <input type="radio" name="a1" value="5"
+                                   required="required" />
+                        </td>
+                        <td height="30" align="center"><input type="radio" name="a1" value="4" /></td>
+                        <td height="30" align="center"><input type="radio" name="a1" value="3" /></td>
+                        <td height="30" align="center"><input type="radio" name="a1" value="2" /></td>
+                        <td height="30" align="center"><input type="radio" name="a1" value="1" /></td>
+                    </tr>
+                    <tr>
+                        <td height="30">&nbsp; 2.Effectiveness percentage of assignment (เปอร์เซ็นต์ประสิทธิผลของการมอบหมาย)</td>
+                        <td width="5%" height="30" align="center">
+                        </td>
+                        <td width="5%" height="30" align="center">
+                        </td>
+                        <td width="5%" height="30" align="center">
+                        </td>
+                        <td width="5%" height="30" align="center">
+                        </td>
+                        <td width="5%" height="30" align="center">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td height="30">&nbsp; - HRM Project (Salary Structure,Performance Mgt.) [ โครงการ HRM (โครงสร้างเงินเดือน, ประสิทธิภาพการทำงาน)]</td>
+                        <td width="5%" height="30" align="center">
+                            <input type="radio" name="a3" value="5"
+                                   required="required" />
+                        </td>
+                        <td width="5%" height="30" align="center">
+                            <input type="radio" name="a3" value="4" />
+                        </td>
+                        <td width="5%" height="30" align="center">
+                            <input type="radio" name="a3" value="3" />
+                        </td>
+                        <td width="5%" height="30" align="center">
+                            <input type="radio" name="a3" value="2" />
+                        </td>
+                        <td width="5%" height="30" align="center">
+                            <input type="radio" name="a3" value="1" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="30">&nbsp;  - Review & Set up new procedure for</td>
+                        <td width="5%" height="30" align="center">
+                            <input type="radio" name="a4" value="5"
+                                   required="required" />
+                        </td>
+                        <td width="5%" height="30" align="center">
+                            <input type="radio" name="a4" value="4" />
+                        </td>
+                        <td width="5%" height="30" align="center">
+                            <input type="radio" name="a4" value="3" />
+                        </td>
+                        <td width="5%" height="30" align="center">
+                            <input type="radio" name="a4" value="2" />
+                        </td>
+                        <td width="5%" height="30" align="center">
+                            <input type="radio" name="a4" value="1" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td height="30">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;  1.) Training (การอบรม)</td>
+                        <td height="30" align="center">
+                            <input type="radio" name="b1" value="5"
+                                   required="required" />
+                        </td>
+                        <td height="30" align="center"><input type="radio" name="b1" value="4" /></td>
+                        <td height="30" align="center"><input type="radio" name="b1" value="3" /></td>
+                        <td height="30" align="center"><input type="radio" name="b1" value="2" /></td>
+                        <td height="30" align="center"><input type="radio" name="b1" value="1" /></td>
+                    </tr>
+                    <tr>
+                        <td height="30">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;  2.) Recruitment (รับสมัครงาน)</td>
+                        <td height="30" align="center">
+                            <input type="radio" name="b2" value="5"
+                                   required="required" />
+                        </td>
+                        <td height="30" align="center"><input type="radio" name="b2" value="4" /></td>
+                        <td height="30" align="center"><input type="radio" name="b2" value="3" /></td>
+                        <td height="30" align="center"><input type="radio" name="b2" value="2" /></td>
+                        <td height="30" align="center"><input type="radio" name="b2" value="1" /></td>
+                    </tr>
+                    <tr>
+                        <td height="30">&nbsp; 3.Reduce OT of Indirect function  (ลด OT ของฟังก์ชันทางอ้อม)</td>
+                        <td height="30" align="center">
+                            <input type="radio" name="b3" value="5"
+                                   required="required" />
+                        </td>
+                        <td height="30" align="center"><input type="radio" name="b3" value="4" /></td>
+                        <td height="30" align="center"><input type="radio" name="b3" value="3" /></td>
+                        <td height="30" align="center"><input type="radio" name="b3" value="2" /></td>
+                        <td height="30" align="center"><input type="radio" name="b3" value="1" /></td>
+                    </tr>
+                    <tr>
+                        <td height="30">&nbsp; 4.Activities participation (การเข้าร่วมกิจกรรม)   </td>
+                        <td height="30" align="center">
+                            <input type="radio" name="b4" value="5"
+                                   required="required" />
+                        </td>
+                        <td height="30" align="center"><input type="radio" name="b4" value="4" /></td>
+                        <td height="30" align="center"><input type="radio" name="b4" value="3" /></td>
+                        <td height="30" align="center"><input type="radio" name="b4" value="2" /></td>
+                        <td height="30" align="center"><input type="radio" name="b4" value="1" /></td>
+                    </tr>
+                    <tr>
+                        <td height="30">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;  5.Training Road Map (การฝึกอบรมแผนที่ถนน)</td>
+                        <td height="30" align="center">
+                            <input type="radio" name="b5" value="5"
+                                   required="required" />
+                        </td>
+                        <td height="30" align="center"><input type="radio" name="b5" value="4" /></td>
+                        <td height="30" align="center"><input type="radio" name="b5" value="3" /></td>
+                        <td height="30" align="center"><input type="radio" name="b5" value="2" /></td>
+                        <td height="30" align="center"><input type="radio" name="b5" value="1" /></td>
+                    </tr>
+
+
+                </table>
+                <b> ตอนที่ 2 ข้อเสนอแนะเพิ่มเติม </b>
+                <textarea name="detail" cols="90" rows="3" id="detail"></textarea>
+                <br />
+                <br />
+                <button type="submit" name="save" class="btn btn-primary">Submit</button>
+
+
+            </form>
+            <br /><br />
+        </div>
+    </div>
+</div>
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

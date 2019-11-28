@@ -10,7 +10,9 @@
     <WebStackScaffolding_IsReferencingScriptLibrariesSelected>True</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
     <WebStackScaffolding_LayoutPageFile />
     <WebStackScaffolding_DbContextTypeFullName>tbkkData.Models.tbkkDataContext</WebStackScaffolding_DbContextTypeFullName>
-    <ActiveDebugProfile>tbkkData</ActiveDebugProfile>
+    <ActiveDebugProfile>IIS Express</ActiveDebugProfile>
+    <RazorPage_SelectedScaffolderID>Microsoft.WebTools.Scaffolding.Core.RazorPages.ModelBasedRazorPageScaffolder</RazorPage_SelectedScaffolderID>
+    <RazorPage_SelectedScaffolderCategoryPath>root/RazorPage</RazorPage_SelectedScaffolderCategoryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>

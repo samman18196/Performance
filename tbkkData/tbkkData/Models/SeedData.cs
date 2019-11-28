@@ -1415,7 +1415,7 @@ namespace tbkkData.Models
                     GrahYear = "2562",
                     GrahBonusUp = 10000,
                     GrahSalaryUp = 25000,
-                    GradeHistory_EmployeeID = 1
+                   
                 }
                 );
                 context.GradeHistory.AddRange(
@@ -1429,7 +1429,7 @@ namespace tbkkData.Models
                    GrahYear = "2562",
                    GrahBonusUp = 5000,
                    GrahSalaryUp = 2000,
-                   GradeHistory_EmployeeID = 4
+                 
                }
                );
                 context.GradeHistory.AddRange(
@@ -1443,7 +1443,7 @@ namespace tbkkData.Models
                    GrahYear = "2562",
                    GrahBonusUp = 10000,
                    GrahSalaryUp = 25000,
-                   GradeHistory_EmployeeID = 3
+                   
                }
                );
                 context.GradeHistory.AddRange(
@@ -1457,7 +1457,7 @@ namespace tbkkData.Models
                    GrahYear = "2562",
                    GrahBonusUp = 10000,
                    GrahSalaryUp = 25000,
-                   GradeHistory_EmployeeID = 8
+                   
                }
                );
                 context.GradeHistory.AddRange(
@@ -1471,7 +1471,7 @@ namespace tbkkData.Models
                    GrahYear = "2562",
                    GrahBonusUp = 10000,
                    GrahSalaryUp = 25000,
-                   GradeHistory_EmployeeID = 12
+                   
                }
                );
                 context.Evaluation.AddRange(
@@ -1482,7 +1482,6 @@ namespace tbkkData.Models
                    EvaDate = DateTime.Parse("2562-2-12"),
                    EvaStatus = 2,
                    Evatype = "1",
-                   Eva_EmployeeID = 1,
                    Eva_GradeHistoryID = 1
                }
                );
@@ -1494,7 +1493,6 @@ namespace tbkkData.Models
                    EvaDate = DateTime.Parse("2562-2-12"),
                    EvaStatus = 2,
                    Evatype = "1",
-                   Eva_EmployeeID = 4,
                    Eva_GradeHistoryID = 2
                }
                );
@@ -1506,7 +1504,6 @@ namespace tbkkData.Models
                    EvaDate = DateTime.Parse("2562-2-12"),
                    EvaStatus = 2,
                    Evatype = "1",
-                   Eva_EmployeeID = 3,
                    Eva_GradeHistoryID = 3
                }
                );
@@ -1518,7 +1515,6 @@ namespace tbkkData.Models
                    EvaDate = DateTime.Parse("2562-2-12"),
                    EvaStatus = 2,
                    Evatype = "1",
-                   Eva_EmployeeID = 8,
                    Eva_GradeHistoryID = 4
                }
                );
@@ -1530,7 +1526,6 @@ namespace tbkkData.Models
                    EvaDate = DateTime.Parse("2562-2-12"),
                    EvaStatus = 2,
                    Evatype = "1",
-                   Eva_EmployeeID = 12,
                    Eva_GradeHistoryID = 5
                }
                );

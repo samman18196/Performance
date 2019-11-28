@@ -57,7 +57,7 @@ using tbkkData;
             WriteLiteral("<!DOCTYPE html\r\n    PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\r\n");
             EndContext();
             BeginContext(175, 664, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "71e1a66ecf3d4d95aa0fea5e48f8eb10", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "671e4067f63f44cc9b8e07616e7271e1", async() => {
                 BeginContext(181, 651, true);
                 WriteLiteral(@"
 
@@ -96,7 +96,7 @@ using tbkkData;
             WriteLiteral("\r\n\r\n");
             EndContext();
             BeginContext(843, 14644, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ebc57c8eb7349e9b028d91656f6d711", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ae72994a34264656854b43f1a4ab76f8", async() => {
                 BeginContext(863, 362, true);
                 WriteLiteral(@"
 
@@ -114,7 +114,7 @@ using tbkkData;
         ");
                 EndContext();
                 BeginContext(1225, 165, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "761a41105abe4cb38b002527df277b61", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55c2cf7ff90f48448f3c58ee9a3a1086", async() => {
                     BeginContext(1310, 73, true);
                     WriteLiteral("\r\n            <div class=\"input-group\">\r\n\r\n\r\n            </div>\r\n        ");
                     EndContext();
@@ -234,7 +234,7 @@ using tbkkData;
                         ");
                 EndContext();
                 BeginContext(4837, 10531, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ee787983b69a4539ad239cac891f31b5", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "427eb52f71934d80a4529a19706dd8be", async() => {
                     BeginContext(4900, 10461, true);
                     WriteLiteral(@"
                             <table width=""100%"" border=""1"" align=""center"" cellpadding=""0"" cellspacing=""0"">

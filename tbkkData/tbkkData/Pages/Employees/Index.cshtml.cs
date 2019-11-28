@@ -20,9 +20,18 @@ namespace tbkkData.Pages.Employees
 
         public IList<Employee> Employee { get;set; }
 
+        public IList<Department> Department { get; set; }
+
+
+
         public async Task OnGetAsync()
         {
             Employee = await _context.Employee.ToListAsync();
+
+            Department = await _context.Department.ToListAsync();
+
+          
         }
+       
     }
 }
